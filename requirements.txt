@@ -1,0 +1,11 @@
+# Core ML framework
+torch
+
+# Hugging Face ecosystem
+diffusers
+transformers
+accelerate
+
+# Optimization and AMD support
+optimum[onnxruntime]
+onnxruntime-directml
