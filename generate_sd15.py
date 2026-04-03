@@ -16,8 +16,6 @@ print("Chargement du modèle et conversion pour DirectML (peut prendre du temps 
 pipe = ORTStableDiffusionPipeline.from_pretrained(
     model_id,
     provider="DmlExecutionProvider",  # 🔥 C'EST LA LIGNE MAGIQUE POUR AMD !
-    safety_checker=None,
-    requires_safety_checker=False,
 )
 
 # Les optimisations VRAM sont gérées différemment par ONNX Runtime,

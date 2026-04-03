@@ -16,8 +16,6 @@ print(f"Vérification du modèle à l'URL : https://huggingface.co/{model_id}")
 pipe = ORTStableDiffusionPipeline.from_pretrained(
     model_id,
     provider="DmlExecutionProvider",
-    safety_checker=None,
-    requires_safety_checker=False,
 )
 
 print("Modèle SD 2.1 chargé. Génération de l'image...")
