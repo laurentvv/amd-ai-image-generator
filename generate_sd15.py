@@ -20,10 +20,6 @@ pipe = ORTStableDiffusionPipeline.from_pretrained(
     requires_safety_checker=False,
 )
 
-# Les optimisations VRAM sont gérées différemment par ONNX Runtime,
-# mais le pipeline est déjà assez efficace. On peut essayer si besoin :
-# pipe.enable_model_cpu_offload() # Fonctionne différemment, peut ne pas être nécessaire
-
 print("Modèle chargé. Génération de l'image...")
 
 # Génération (le générateur n'est plus lié à un device "cuda")
