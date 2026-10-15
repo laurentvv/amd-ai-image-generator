@@ -18,3 +18,4 @@ Thumbs.db
 # Project specific - Generated images and models
 output_*.png
 *.safetensors
+.agent/*.duckdb.wal
